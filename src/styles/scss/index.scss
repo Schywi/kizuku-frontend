@@ -1,0 +1,22 @@
+@import 'App';
+
+
+// ! Homepage css
+
+@import 'responsivity/headerRes';
+@import 'homepage/main','responsivity/mainRes';
+@import 'homepage/footer';
+
+@import 'navigation/header';
+@import 'navigation/dashHeader';
+
+// ! Dashboard css
+
+
+@import 'dashboard/main';
+@import 'dashboard/profile';
+ 
+// ! register and sign in 
+
+@import 'register/main';
+@import 'signin/main';

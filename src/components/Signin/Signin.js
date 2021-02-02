@@ -1,4 +1,6 @@
 import React from 'react';
+import '../../styles/css/signin/main.css';
+ 
 
 class Signin extends React.Component {
   constructor(props) {
@@ -38,46 +40,53 @@ class Signin extends React.Component {
   render() {
     const { onRouteChange } = this.props;
     return (
-      <article className="br3 ba b--black-10 mv4 w-100 w-50-m w-25-l mw6 shadow-5 center">
-        <main className="pa4 black-80">
-          <div className="measure">
-            <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
-              <legend className="f1 fw6 ph0 mh0">Sign In</legend>
-              <div className="mt3">
-                <label className="db fw6 lh-copy f6" htmlFor="email-address">Email</label>
+      <>
+   
+   
+        <main className="mainSign">
+          <div className="formSign">
+            <header>
+                <h1>Sign in</h1>
+                <p> Please , type your e-mail and password :</p>
+            </header>
+            <div className="form-item">
+               
                 <input
-                  className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100"
-                  type="email"
+                  className="inputForm" placeholder="Email"
+                  type="email" required="required"
                   name="email-address"
                   id="email-address"
                   onChange={this.onEmailChange}
                 />
               </div>
-              <div className="mv3">
-                <label className="db fw6 lh-copy f6" htmlFor="password">Password</label>
+              <div className="form-item">
+             
                 <input
-                  className="b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100"
+                 className="inputForm"
+                 required="required" placeholder="Password"
                   type="password"
                   name="password"
                   id="password"
                   onChange={this.onPasswordChange}
                 />
+                 <button class="inputButton" type="button" >Forget your password?</button>
               </div>
-            </fieldset>
+           
             <div className="">
-              <input
-                onClick={this.onSubmitSignIn}
-                className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib"
+                <button onClick={this.onSubmitSignIn} 
                 type="submit"
                 value="Sign in"
-              />
+                class="logInButton">Sign in</button>
             </div>
-            <div className="lh-copy mt3">
-              <p  onClick={() => onRouteChange('register')} className="f6 link dim black db pointer">Register</p>
+            <div className="form-hint">
+                <span> Don't have an account?
+                    <p onClick={() => onRouteChange('register')}>Make one</p>
+                </span>
             </div>
           </div>
         </main>
-      </article>
+   
+      </>
     );
   }
 }

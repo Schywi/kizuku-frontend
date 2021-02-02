@@ -1,0 +1,88 @@
+body {
+  padding:0;
+    margin: 0;
+    font-family: "Ubuntu", sans-serif;
+    box-sizing: border-box;
+   
+
+  }
+  
+  // ! Header section
+  .homeHeader {
+    background-color: white;
+    text-align: center;
+  }
+  
+  .header-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6em 0;
+  }
+  
+  .logo {
+    display:flex;
+      
+     align-items: center;
+
+    &__title {
+      font-size: 2rem;
+      letter-spacing: 0.15rem;
+      font-family: "Lora", serif, sans-serif;
+      color: #143774;
+      font-weight: 400;
+      margin: 0;
+    }
+  
+    &__img{
+      height: 150px;
+    }
+  }
+
+
+  //* Navigation
+  .nav {
+    &__list {
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+    }
+    &__item {
+      margin-left: 2em;
+      padding: 0.25em 0;
+      a,p {
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 0.9rem;
+        font-weight: 700;
+        letter-spacing: 0.1rem;
+        color: #137c80;
+        text-transform: uppercase;
+        padding: 0.9em 0;
+        text-align: center;
+      }
+      a,p:hover,
+      a,p:focus {
+        color: #1792d2;
+      }
+
+      .logout {
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 2rem;
+          margin-left: 1rem;
+        }
+      }
+    }
+    &__item--active {
+      border-bottom: 2px solid #0F5D5F;
+    }
+  }
+  //* End of header section */
+  

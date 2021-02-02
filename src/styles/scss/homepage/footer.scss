@@ -1,0 +1,23 @@
+
+//* Footer section */
+.footer {
+    display: block;
+    background: linear-gradient(90deg, #1dbbbf 0%, #137c80 100%);
+    text-align: center;
+    padding: 2em 0;
+    color:  white;
+    margin: 0;
+    &__title {
+      font-size: 1rem;
+      margin: 0;
+      line-height: 1.75rem;
+    }
+  
+    &__description {
+        font-size: 1rem;
+        margin: 0;
+        line-height: 1.75rem;
+    }
+  }
+  //* End of footer section */
+  

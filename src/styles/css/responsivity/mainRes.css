@@ -1,0 +1,121 @@
+@media (max-width: 1200px) {
+  body {
+    overflow: visible;
+  }
+
+  .dashAside {
+    visibility: hidden;
+  }
+
+  .search {
+    flex-direction: column;
+  }
+  .search .buttons {
+    margin-top: 1rem;
+  }
+
+  .image-found {
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 1.5em;
+  }
+  .image-found .image-list {
+    margin-top: 1rem;
+    flex-direction: row;
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 1.5em;
+  }
+
+  .dashHeader {
+    visibility: hidden;
+  }
+
+  .dashMain {
+    position: relative;
+    left: -20%;
+  }
+
+  .main {
+    width: 100%;
+    margin-bottom: 2em;
+    padding-bottom: 1em;
+  }
+
+  .sidebar, .profile {
+    width: 100%;
+    row-gap: 0;
+  }
+
+  .featured-article__title {
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: 700;
+  }
+  .featured-article__description {
+    font-size: 0.75rem;
+    line-height: 1.2rem;
+  }
+  .featured-article__continue-reading {
+    font-size: 0.6rem;
+  }
+
+  .recent-article {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .recent-article__img-with-date {
+    width: 100%;
+  }
+  .recent-article__img {
+    width: 100%;
+  }
+  .recent-article__date {
+    text-align: end;
+    font-size: 0.7rem;
+    margin: 0;
+  }
+  .recent-article__information {
+    width: 100%;
+  }
+  .recent-article__title {
+    margin: 0;
+    padding-bottom: 0;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .recent-article__description {
+    padding-bottom: 0;
+  }
+  .recent-article__continue-reading {
+    font-size: 0.6rem;
+    padding-bottom: 0.5em;
+  }
+
+  .sidebar-widget, .profile-widget {
+    justify-content: center;
+    margin-bottom: 2em;
+  }
+  .sidebar-widget__title, .profile-widget__title {
+    font-size: 2.5rem;
+  }
+  .sidebar-widget__description, .profile-widget__description {
+    font-size: 0.9rem;
+    color: #143774;
+    line-height: 1rem;
+  }
+  .sidebar-widget__img, .profile-widget__img {
+    padding: 0.25em 0 0.5em 0;
+  }
+
+  .sidebar-widget-recent__title {
+    font-weight: 700;
+  }
+}
+
+/*# sourceMappingURL=mainRes.css.map */
