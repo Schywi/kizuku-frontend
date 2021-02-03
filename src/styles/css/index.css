@@ -524,6 +524,15 @@ ul, a {
   font-size: 1.5rem;
 }
 
+.dashH2 {
+  position: relative;
+  margin: 1.3rem 3rem;
+  text-align: start;
+  color: #252733;
+  font-size: 1.1rem;
+  top: 1.5rem;
+}
+
 .search {
   border: 1px solid #DFE0EB;
   background: #ffffff;
