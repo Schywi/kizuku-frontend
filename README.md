@@ -1,4 +1,9 @@
-# SmartBrain - v2
+# Kizuku
+
+## Watch the preview
+
+![caption](./img/preview.gif)
+
 Final project for ZTM course
 
 1. Clone this repo
