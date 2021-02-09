@@ -2,7 +2,7 @@
 
 ## Watch the preview
 
-![caption](./img/preview.gif)
+![Kizuku face recogntion Demo](demo/demo.gif)
 
 Final project for ZTM course
 
